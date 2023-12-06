@@ -2,7 +2,7 @@
 
 const redColor = document.querySelector(".red");  /* me busca todo lo que tenga la .clase red en el documento index.html */ 
 const blackColor = document.querySelector(".black"); /* querySelector me permite buscar lo que sea, no tiene por qué ser una clase */
-const grayColor = document.getElementsByClassName(".gray");
+const grayColor = document.querySelector(".gray");
 
 const cartButton = document.getElementById("button"); /* creo una constante para referirme al botón de agregar al carrito y la busco a través de su ID*/
 const itemTag = document.querySelector("h3");  /* creo una constante para referirme al cuadradito donde pone CARRO */
@@ -26,4 +26,5 @@ grayColor.addEventListener("click", () => {
     cartButton.style.backgroundColor = "gray";
     itemTag.style.backgroundColor = "gray";
 });
+
 

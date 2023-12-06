@@ -1,5 +1,6 @@
-import {describe ,expect, it, beforeAll} from 'vitest'
+import {describe ,expect, it, beforeAll, test} from 'vitest'
 import {JSDOM} from 'jsdom'
+import { cartButton, redColor } from '../src/js/app';
 
 describe('APP',()=>{
     let dom;
@@ -16,3 +17,4 @@ describe('APP',()=>{
         expect(link.href).toMatch(/\/src\/css\/style.css$/);
       });
 })
+
